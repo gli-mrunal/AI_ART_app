@@ -8,7 +8,6 @@ const RenderCards = ({data, title}) => {
   }
   return (
     <h2 classname = "mt-5 font-bold text-[#6449ff] text-xl uppercase">{title}
-
     </h2>
   )
 
@@ -41,7 +40,7 @@ const Home = () => {
 
       <div className="mt-10">
         {loading ? (
-          <div className="flex-justify-center items-center">
+          <div className="flex justify-center items-center">
             <Loader />
           </div>
         ):(
@@ -54,7 +53,7 @@ const Home = () => {
                 Showing results for <span className="text-[#222328]">{searchText}</span>
               </h2>
             )}
-            <div classname = "grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
+            <div className = "grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3">
               {searchText ? (
                 <RenderCards
                 data = {[]}
