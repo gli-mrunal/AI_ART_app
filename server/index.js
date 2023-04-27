@@ -14,7 +14,7 @@ app.use('/api/v1/post',postRoutes);
 app.use('/api/v1/dalle',dalleRoutes);
 
 app.get('/', async (req,res) => {
-    res.send('Hello from Comp 589');
+   res.send('Hello from Comp 589');
 })
 
 const startServer = async () => {
